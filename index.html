@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhas Músicas Favoritas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Minhas Músicas Favoritas</h1>
+      <p>Adicione suas músicas favoritas e veja a lista crescer.</p>
+    </header>
+
+    <section class="form-section">
+      <form id="music-form">
+        <label for="song-input">Nome da música</label>
+        <input type="text" id="song-input" placeholder="Digite o nome da música" required>
+
+        <label for="artist-input">Artista</label>
+        <input type="text" id="artist-input" placeholder="Digite o artista" required>
+
+        <label for="link-input">Link da música</label>
+        <input type="url" id="link-input" placeholder="Cole o link da música" required>
+
+        <button type="submit">Adicionar música</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Sua lista de músicas</h2>
+      <ul id="music-list" class="music-list"></ul>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
